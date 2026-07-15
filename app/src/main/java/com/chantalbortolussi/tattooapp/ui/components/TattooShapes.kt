@@ -166,10 +166,10 @@ object TattooShapes {
         val sw = r * 0.2f
         
         path.moveTo(sx, sy - sw)
-        path.quadTo(sx, sy, sx + sw, sy)
-        path.quadTo(sx, sy, sx, sy + sw)
-        path.quadTo(sx, sy, sx - sw, sy)
-        path.quadTo(sx, sy, sx, sy - sw)
+        path.quadraticTo(sx, sy, sx + sw, sy)
+        path.quadraticTo(sx, sy, sx, sy + sw)
+        path.quadraticTo(sx, sy, sx - sw, sy)
+        path.quadraticTo(sx, sy, sx, sy - sw)
         path.close()
 
         return path
@@ -182,9 +182,9 @@ object TattooShapes {
         
         // Antennas
         path.moveTo(cx, cy - height * 0.2f)
-        path.quadTo(cx - width * 0.1f, cy - height * 0.4f, cx - width * 0.12f, cy - height * 0.45f)
+        path.quadraticTo(cx - width * 0.1f, cy - height * 0.4f, cx - width * 0.12f, cy - height * 0.45f)
         path.moveTo(cx, cy - height * 0.2f)
-        path.quadTo(cx + width * 0.1f, cy - height * 0.4f, cx + width * 0.12f, cy - height * 0.45f)
+        path.quadraticTo(cx + width * 0.1f, cy - height * 0.4f, cx + width * 0.12f, cy - height * 0.45f)
 
         // Symmetric Left Top Wing
         path.moveTo(cx, cy - height * 0.05f)
