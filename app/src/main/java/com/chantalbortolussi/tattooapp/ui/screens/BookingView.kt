@@ -460,7 +460,7 @@ fun CustomInputField(
 
 // Success full-screen Overlay card
 @Composable
-fun SuccessOverlay(onDismiss: () -> Void) {
+fun SuccessOverlay(onDismiss: () -> Unit) {
     Box(
         modifier = Modifier
             .fillMaxSize()

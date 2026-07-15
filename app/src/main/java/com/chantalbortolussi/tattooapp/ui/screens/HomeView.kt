@@ -365,7 +365,7 @@ fun HomeView() {
 fun LightboxOverlay(
     images: List<GalleryImage>,
     startIndex: Int,
-    onClose: () -> Void
+    onClose: () -> Unit
 ) {
     val pagerState = rememberPagerState(initialPage = startIndex, pageCount = { images.size })
 
